@@ -1,98 +1,88 @@
 /* Global Styles */
 body {
-    font-family: 'Seravek', Arial, sans-serif;
+    font-family: "Seravek", sans-serif;
+    background-color: rgb(34, 36, 38); /* Darkest theme color */
+    color: rgb(114, 188, 142); /* Light green */
     margin: 0;
     padding: 0;
-    color: #222; /* Default text color */
-    background-color: #F7F7F7;
+    line-height: 1.6;
   }
   
-  /* Header and Navigation */
+  /* Header */
   header {
-    background-color: rgb(34, 36, 38); /* Dark theme */
-    color: white;
-    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    background-color: rgb(88, 142, 146); /* Secondary color */
   }
   
   header .logo h1 {
     margin: 0;
+    color: rgb(255, 164, 28); /* Orange accent */
   }
   
-  header nav ul {
+  nav ul {
     list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 15px;
   }
   
-  header nav ul li a {
-    color: white;
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
     text-decoration: none;
+    color: rgb(255, 255, 255);
     font-weight: bold;
-  }
-  
-  header nav ul li a:hover {
-    color: rgb(88, 142, 146); /* Teal highlight */
   }
   
   /* Hero Section */
   #hero {
-    background-color: rgb(114, 188, 142); /* Soft green */
-    color: white;
     text-align: center;
     padding: 50px 20px;
   }
   
-  #hero h2 {
-    font-size: 2.5em;
+  .hero-content h2 {
+    font-size: 2.5rem;
+    color: rgb(255, 164, 28); /* Orange accent */
   }
   
-  #hero p {
-    font-size: 1.2em;
-    margin-top: 10px;
+  .hero-content p {
+    font-size: 1.2rem;
   }
   
-  /* Section Styles */
-  section {
-    padding: 40px 20px;
+  /* Skills Section */
+  #skills ul {
+    list-style: square inside;
+    padding: 0;
   }
   
-  h2 {
-    font-size: 2em;
-    color: rgb(148, 95, 16); /* Deep orange */
+  #skills ul li {
+    margin: 5px 0;
   }
   
-  p, ul {
-    font-size: 1em;
-    line-height: 1.6;
+  /* Projects Section */
+  #projects ul {
+    list-style: none;
+    padding: 0;
   }
   
-  ul {
-    list-style-type: square;
+  #projects ul li {
+    margin: 10px 0;
   }
   
-  ul li {
-    margin-bottom: 10px;
-  }
-  
-  /* Links */
-  a {
-    color: rgb(255, 164, 28); /* Bright orange */
+  #projects ul li a {
     text-decoration: none;
-  }
-  
-  a:hover {
-    color: rgb(88, 142, 146); /* Teal highlight */
+    color: rgb(255, 164, 28);
   }
   
   /* Footer */
   footer {
-    background-color: rgb(34, 36, 38); /* Dark theme */
-    color: white;
     text-align: center;
     padding: 10px 0;
+    background-color: rgb(34, 36, 38);
+    color: rgb(114, 188, 142);
   }
