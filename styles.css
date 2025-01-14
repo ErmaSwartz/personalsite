@@ -1,28 +1,78 @@
+/* Import Roboto font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;100&display=swap');
 
+/* Global Styles */
 body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; /* Thin weight */
   color: #72bc8e;
   background-color: #222426;
-}
-
-h1, h2, h3 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  color: #ffa41c;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
 .container {
   max-width: 1200px;
-  padding: 40px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Regular weight for headings */
+  color: #ffa41c;
+}
+
+/* Navigation Bar */
+header {
+  background-color: #222426;
+  padding: 10px 0;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-weight: 400;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #72bc8e;
+  text-decoration: none;
+  font-weight: 300; /* Thin weight for links */
+}
+
+/* Sections */
 .section {
-  padding: 40px 0;
+  margin: 40px 0;
 }
 
+.skills-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-columns ul {
+  list-style: none;
+}
+
+.skills-columns ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
 footer {
+  text-align: center;
   padding: 20px;
   background-color: #222426;
 }
