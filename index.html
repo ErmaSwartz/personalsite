@@ -8,21 +8,50 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-dark text-light" style="font-family: 'Arial', sans-serif; font-weight: 300;">
-  <!-- Navigation Bar -->
-  <header class="py-4">
-    <div class="container d-flex justify-content-between align-items-center">
-      <h1 style="color: #72bc8e; font-size: 1.8rem; margin: 0;">Erma Swartz</h1>
-      <nav>
-        <ul class="nav">
-          <li class="nav-item"><a href="#hero" class="nav-link px-3" style="color: #72bc8e;">Home</a></li>
-          <li class="nav-item"><a href="#skills" class="nav-link px-3" style="color: #72bc8e;">Skills</a></li>
-          <li class="nav-item"><a href="#resume" class="nav-link px-3" style="color: #72bc8e;">Resume</a></li>
-          <li class="nav-item"><a href="#projects" class="nav-link px-3" style="color: #72bc8e;">Projects</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link px-3" style="color: #72bc8e;">Contact</a></li>
-        </ul>
-      </nav>
+<!-- Navigation Bar -->
+<header class="py-4">
+  <div class="container d-flex justify-content-between align-items-center">
+    <h1 style="color: #72bc8e; font-size: 1.8rem; margin: 0;">Erma Swartz</h1>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a href="#hero" class="nav-link px-3" style="color: #72bc8e;">Home</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link px-3" style="color: #72bc8e;">Skills</a></li>
+        <li class="nav-item"><a href="#resume" class="nav-link px-3" style="color: #72bc8e;">Resume</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link px-3" style="color: #72bc8e;">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link px-3" style="color: #72bc8e;">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Image Carousel -->
+<div id="workCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Images/2024-11-20-booklet-valpa-erma copy.png" class="d-block w-100" alt="Work Example 1">
     </div>
-  </header>
+    <div class="carousel-item">
+      <img src="Images/2024-11-20-booklet-valpa-erma8 copy.png" class="d-block w-100" alt="Work Example 2">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/2024-11-20-booklet-valpa-erma4 copy.png" class="d-block w-100" alt="Work Example 3">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/layout2 (1)20.png" class="d-block w-100" alt="Work Example 4">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#workCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#workCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Ensure to include Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Hero Section -->
   <section id="hero" class="d-flex align-items-center justify-content-center text-center py-5">
@@ -63,7 +92,21 @@
       </div>
     </div>
   </section>
-
+<!-- About Section -->
+<section id="about" class="py-5 border-top">
+    <div class="container text-center">
+      <h2 class="mb-4" style="color: #72bc8e; font-size: 1.5rem;">About</h2>
+      <p style="font-size: 1rem; line-height: 1.8;">
+        I am an environmental advocate and data-driven strategist currently pursuing a Master of Science at Columbia University. My work focuses on analyzing waste systems, urban resilience, and circular economy strategies. With experience in GIS, data analysis, and sustainable planning, I aim to create scalable solutions for global challenges.
+      </p>
+      <p style="font-size: 1rem; line-height: 1.8;">
+        Professionally, I’ve worked in the nonprofit and political sectors, leading data-driven campaigns and designing innovative strategies to achieve impactful outcomes. My past roles include developing GIS solutions, managing digital marketing campaigns, and crafting actionable insights for stakeholders.
+      </p>
+      <p style="font-size: 1rem; line-height: 1.8;">
+        Beyond work, I am a certified yoga instructor, an experienced diver, and an avid environmental steward, driven to merge my passions for sustainability and community-focused solutions.
+      </p>
+    </div>
+  </section>
   <!-- Resume Section -->
   <section id="resume" class="py-5 border-top">
     <div class="container text-center">
