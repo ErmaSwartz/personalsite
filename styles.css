@@ -8,9 +8,17 @@ body {
     line-height: 1.6;
   }
   
+  /* Add margin to main content */
+  section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+  }
+  
+  /* Header */
   header {
-    background-color: #222426; /* Match the background */
-    color: #ffa41c; /* Accent color for logo */
+    background-color: #222426;
+    color: #ffa41c; /* Accent */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,8 +26,8 @@ body {
   }
   
   header .logo h1 {
-    color: #ffa41c; /* Accent color for logo */
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    color: #ffa41c;
   }
   
   nav ul {
@@ -31,55 +39,45 @@ body {
   }
   
   nav ul li a {
-    color: #72bc8e; /* Light green text */
+    color: #72bc8e;
     text-decoration: none;
   }
   
   nav ul li a:hover {
-    color: #ffa41c; /* Accent color on hover */
+    color: #ffa41c;
   }
   
-  .hero-content {
-    text-align: center;
-    margin: 50px auto;
-  }
-  
-  .hero-content h2 {
-    color: #ffa41c; /* Accent color for emphasis */
-  }
-  
-  section {
-    padding: 20px;
-  }
-  
-  h2 {
-    color: #ffa41c; /* Accent color for section titles */
-    margin-bottom: 15px;
-  }
-  
-  /* Skills Section */
+  /* Skills */
   .skills-columns {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 10px;
   }
   
   .skills-columns ul {
     list-style: none;
     padding: 0;
+    flex: 1;
   }
   
   .skills-columns li {
     margin-bottom: 10px;
   }
   
+  /* Hero */
+  .hero-content h2 {
+    color: #ffa41c;
+    text-align: center;
+  }
+  
   /* Links */
   a {
-    color: #72bc8e; /* Light green links */
+    color: #72bc8e;
     text-decoration: none;
   }
   
   a:hover {
-    color: #ffa41c; /* Accent color on hover */
+    color: #ffa41c;
   }
   
   /* Footer */
