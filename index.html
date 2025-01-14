@@ -4,123 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Erma Swartz | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bg-dark text-light">
   <!-- Navigation Bar -->
-  <header>
+  <header class="bg-primary py-3">
     <div class="container">
-      <div class="logo">
-        <h1>Erma Swartz</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#summary">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <h1 class="text-center text-light">Erma Swartz</h1>
+      <nav class="d-flex justify-content-center">
+        <ul class="nav">
+          <li class="nav-item"><a href="#hero" class="nav-link text-light">Home</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link text-light">Skills</a></li>
+          <li class="nav-item"><a href="#resume" class="nav-link text-light">Resume</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link text-light">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link text-light">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="hero" class="section">
+  <section id="hero" class="py-5 bg-secondary text-center">
     <div class="container">
-      <h2>Fighting climate change, building data-driven solutions, and creating a sustainable future.</h2>
-      <img src="images/hero-image.jpg" alt="Sustainable future" class="responsive-img">
+      <h2 class="text-light">Fighting climate change, building data-driven solutions, and creating a sustainable future.</h2>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="section">
+  <section id="skills" class="py-5">
     <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-columns">
-        <ul>
-          <li>ArcGIS Pro</li>
-          <li>Python</li>
-          <li>JSX</li>
-          <li>AWS</li>
-        </ul>
-        <ul>
-          <li>HTML</li>
-          <li>Adobe Suite</li>
-          <li>Content Editing</li>
-          <li>Digital Fundraising</li>
-        </ul>
-        <ul>
-          <li>Microsoft Suite</li>
-          <li>Google Suite</li>
-          <li>Website Design</li>
-          <li>Public Speaking</li>
-        </ul>
+      <h2 class="text-center text-warning">Skills</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="list-unstyled">
+            <li>ArcGIS Pro</li>
+            <li>Python</li>
+            <li>JSX</li>
+            <li>AWS</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-unstyled">
+            <li>HTML</li>
+            <li>Adobe Suite</li>
+            <li>Content Editing</li>
+            <li>Digital Fundraising</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-unstyled">
+            <li>Microsoft Suite</li>
+            <li>Google Suite</li>
+            <li><a href="https://ermahswartz.wixsite.com/reclaimed-collective" target="_blank" rel="noopener noreferrer" class="text-warning">Website Design</a></li>
+            <li>Public Speaking</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Professional Summary Section -->
-  <section id="summary" class="section">
+  <!-- Professional Summary -->
+  <section id="summary" class="py-5 bg-secondary text-light">
     <div class="container">
-      <h2>About</h2>
-      <p>I am a dedicated environmental advocate with a passion for fighting climate change through data-driven solutions, policy analysis, and innovative project management. With extensive experience in GIS, data visualization, and research, I have worked on diverse projects ranging from waste management strategies to flooding mitigation. My skills in ArcGIS Pro, Adobe Suite, and Python, coupled with a commitment to fostering sustainable development, drive my work to create impactful solutions for a greener future.</p>
+      <h2 class="text-center">About</h2>
+      <p>I am a dedicated environmental advocate with a passion for fighting climate change...</p>
     </div>
   </section>
 
   <!-- Resume Section -->
-  <section id="resume" class="section">
+  <section id="resume" class="py-5">
     <div class="container">
-      <h2>Resume</h2>
-      <h3>Work History</h3>
+      <h2 class="text-center text-warning">Resume</h2>
       <ul>
-        <li>
-          <strong>Mandate Media | Political Strategist and Data Consultant</strong><br>
-          January 2024 – January 2025<br>
-          Built a data application for management, analysis, and ROI reporting using Python, JSX, AWS, and React.<br>
-          Managed Congressional and local client accounts, developing marketing and fundraising strategies.<br>
-          Edited content for quality and collaborated with clients to ensure satisfaction.
-        </li>
-        <li>
-          <strong>Retail Energy Advancement League | Policy and Data Analyst</strong><br>
-          January 2023 – October 2023<br>
-          Researched green energy markets and drafted policy recommendations.<br>
-          Created legislative reports with advanced Excel and visualizations.
-        </li>
-        <li>
-          <strong>4Degrees | Digital Account Manager and Data Specialist</strong><br>
-          October 2021 – December 2022<br>
-          Managed digital campaigns for secretaries of state and Congressional members.<br>
-          Delivered high-quality content and adapted to shifting deadlines.
-        </li>
+        <li><strong>Mandate Media</strong> | Political Strategist and Data Consultant</li>
+        <li><strong>Retail Energy Advancement League</strong> | Policy and Data Analyst</li>
+        <li><strong>4Degrees</strong> | Digital Account Manager and Data Specialist</li>
       </ul>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="section">
+  <section id="projects" class="py-5 bg-secondary">
     <div class="container">
-      <h2>Projects</h2>
+      <h2 class="text-center text-light">Projects</h2>
       <ul>
-        <li><a href="Projects/garbageepidemic.html">The Garbage Epidemic</a></li>
-        <li><a href="Projects/floodingstudy.html">Flooding in NYC</a></li>
+        <li><a href="Projects/garbageepidemic.html" class="text-warning">The Garbage Epidemic</a></li>
+        <li><a href="Projects/floodingstudy.html" class="text-warning">Flooding in NYC</a></li>
       </ul>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section">
+  <section id="contact" class="py-5">
     <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:es4284@columbia.edu">es4284@columbia.edu</a></p>
-      <p>GitHub: <a href="https://github.com/ErmaSwartz" target="_blank">ErmaSwartz</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/erma-swartz-174939184" target="_blank">LinkedIn Profile</a></p>
+      <h2 class="text-center text-warning">Contact Me</h2>
+      <p class="text-center">Email: <a href="mailto:es4284@columbia.edu" class="text-warning">es4284@columbia.edu</a></p>
+      <p class="text-center">GitHub: <a href="https://github.com/ErmaSwartz" target="_blank" class="text-warning">ErmaSwartz</a></p>
+      <p class="text-center">LinkedIn: <a href="https://linkedin.com/in/erma-swartz-174939184" target="_blank" class="text-warning">LinkedIn Profile</a></p>
     </div>
   </section>
 
-  <footer>
-    <div class="container">
+  <footer class="py-3 bg-primary">
+    <div class="container text-center text-light">
       <p>&copy; 2025 Erma Swartz. All rights reserved.</p>
     </div>
   </footer>
