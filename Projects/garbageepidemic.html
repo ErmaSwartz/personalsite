@@ -3,91 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Garbage Epidemic Book</title>
-  <link rel="stylesheet" href="../styles.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+  <title>Mapping the Garbage Epidemic</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Lato', sans-serif;
+      font-weight: 300;
       background-color: #222426; /* Gray background */
-      color: #72bc8e;
+      color: #72bc8e; /* Green text */
       margin: 0;
       padding: 0;
+    }
+    .floating-box {
+      background-color: #000; /* Black box */
+      color: #72bc8e; /* Green text */
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Floating effect */
+      margin-bottom: 40px;
+    }
+    h1, h2, h3 {
+      color: #72bc8e;
+      font-weight: 300; /* Thin text */
+    }
+    a {
+      color: #72bc8e;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .book-container {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      flex-wrap: wrap;
+      gap: 10px;
     }
-
-    .book-container {
-      width: 80%;
-      height: 80%;
-      background-color: black;
-      border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    .book-page {
+      width: 45%; /* Two-page layout */
+      height: auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
-
-    .flipbook {
-      width: 100%;
-      height: 100%;
-    }
-
-    .flipbook .page {
-      width: 100%;
-      height: 100%;
-    }
-
-    .flipbook img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 10px;
+    .single-page {
+      width: 90%; /* Single page for first/last */
+      margin: auto;
     }
   </style>
 </head>
 <body>
-  <div class="book-container">
-    <div class="flipbook">
-      <!-- Pages -->
-      <div class="page"><img src="../Images/1.png" alt="Page 1"></div>
-      <div class="page"><img src="../Images/2.png" alt="Page 2"></div>
-      <div class="page"><img src="../Images/3.png" alt="Page 3"></div>
-      <div class="page"><img src="../Images/4.png" alt="Page 4"></div>
-      <div class="page"><img src="../Images/5.png" alt="Page 5"></div>
-      <div class="page"><img src="../Images/6.png" alt="Page 6"></div>
-      <div class="page"><img src="../Images/7.png" alt="Page 7"></div>
-      <div class="page"><img src="../Images/8.png" alt="Page 8"></div>
-      <div class="page"><img src="../Images/9.png" alt="Page 9"></div>
-      <div class="page"><img src="../Images/10.png" alt="Page 10"></div>
-      <div class="page"><img src="../Images/11.png" alt="Page 11"></div>
-      <div class="page"><img src="../Images/12.png" alt="Page 12"></div>
-      <div class="page"><img src="../Images/13.png" alt="Page 13"></div>
-      <div class="page"><img src="../Images/14.png" alt="Page 14"></div>
-      <div class="page"><img src="../Images/15.png" alt="Page 15"></div>
-      <div class="page"><img src="../Images/16.png" alt="Page 16"></div>
-      <div class="page"><img src="../Images/17.png" alt="Page 17"></div>
-      <div class="page"><img src="../Images/18.png" alt="Page 18"></div>
-      <div class="page"><img src="../Images/19.png" alt="Page 19"></div>
-      <div class="page"><img src="../Images/20.png" alt="Page 20"></div>
-      <div class="page"><img src="../Images/21.png" alt="Page 21"></div>
-      <div class="page"><img src="../Images/22.png" alt="Page 22"></div>
-      <div class="page"><img src="../Images/23.png" alt="Page 23"></div>
-      <div class="page"><img src="../Images/24.png" alt="Page 24"></div>
-      <div class="page"><img src="../Images/25.png" alt="Page 25"></div>
-      <div class="page"><img src="../Images/26.png" alt="Page 26"></div>
+  <!-- Header -->
+  <header class="py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 style="font-size: 1.8rem;">Mapping the Garbage Epidemic</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="../index.html" class="nav-link px-3">Home</a></li>
+          <li class="nav-item"><a href="garbageepidemic.html" class="nav-link px-3">Garbage Epidemic</a></li>
+          <li class="nav-item"><a href="#">Other Projects</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <script>
-    $(document).ready(function() {
-      $('.flipbook').turn({
-        width: 800, // Width of the book
-        height: 600, // Height of the book
-        autoCenter: true, // Centers the book
-        elevation: 50, // Adds a 3D elevation effect
-      });
-    });
-  </script>
+  <!-- Project Name -->
+  <section id="project-name" class="py-5">
+    <div class="container floating-box text-center">
+      <h1>Mapping the Garbage Epidemic</h1>
+    </div>
+  </section>
+
+  <!-- Description -->
+  <section id="description" class="py-5">
+    <div class="container floating-box">
+      <h2>Description</h2>
+      <p>
+        This project explores the environmental, social, and economic impacts of waste mismanagement in urban areas.
+        By combining Geographic Information Systems (GIS) and data analysis, we identified key patterns in waste disposal, 
+        highlighted the effects on vulnerable ecosystems and communities, and proposed actionable solutions for policymakers.
+      </p>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section id="methodology" class="py-5">
+    <div class="container floating-box">
+      <h2>Methodology</h2>
+      <p>
+        The methodology focused on three core components:
+        <ul>
+          <li>Data Collection: Aggregated waste management reports, city GIS datasets, and surveys.</li>
+          <li>Spatial Analysis: Used GIS to map waste disposal locations and their proximity to affected communities.</li>
+          <li>Visualization: Created infographics and maps to communicate findings to policymakers and stakeholders.</li>
+        </ul>
+      </p>
+    </div>
+  </section>
+
+<!-- Booklet -->
+<section id="booklet" class="py-5">
+    <div class="container floating-box text-center">
+      <h2>Interactive Booklet</h2>
+      <div class="book-container">
+        <!-- Single page (cover) -->
+        <img src="../Images/1.png" alt="Cover" class="book-page single-page">
+        <!-- Double-page spreads -->
+        <img src="../Images/2.png" alt="Page 2" class="book-page">
+        <img src="../Images/3.png" alt="Page 3" class="book-page">
+        <img src="../Images/4.png" alt="Page 4" class="book-page">
+        <img src="../Images/5.png" alt="Page 5" class="book-page">
+        <img src="../Images/6.png" alt="Page 6" class="book-page">
+        <img src="../Images/7.png" alt="Page 7" class="book-page">
+        <img src="../Images/8.png" alt="Page 8" class="book-page">
+        <img src="../Images/9.png" alt="Page 9" class="book-page">
+        <img src="../Images/10.png" alt="Page 10" class="book-page">
+        <img src="../Images/11.png" alt="Page 11" class="book-page">
+        <img src="../Images/12.png" alt="Page 12" class="book-page">
+        <img src="../Images/13.png" alt="Page 13" class="book-page">
+        <img src="../Images/14.png" alt="Page 14" class="book-page">
+        <img src="../Images/15.png" alt="Page 15" class="book-page">
+        <img src="../Images/16.png" alt="Page 16" class="book-page">
+        <img src="../Images/17.png" alt="Page 17" class="book-page">
+        <img src="../Images/18.png" alt="Page 18" class="book-page">
+        <img src="../Images/19.png" alt="Page 19" class="book-page">
+        <img src="../Images/20.png" alt="Page 20" class="book-page">
+        <img src="../Images/21.png" alt="Page 21" class="book-page">
+        <img src="../Images/22.png" alt="Page 22" class="book-page">
+        <img src="../Images/23.png" alt="Page 23" class="book-page">
+        <img src="../Images/24.png" alt="Page 24" class="book-page">
+        <img src="../Images/25.png" alt="Page 25" class="book-page">
+        <!-- Single page (back cover) -->
+        <img src="../Images/26.png" alt="Back Cover" class="book-page single-page">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center">
+    <p>© 2025 Erma Swartz. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
