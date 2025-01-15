@@ -13,16 +13,17 @@
       background-color: #f7f8fa;
       color: #72bc8e;
     }
-    .section-box {
-      background-color: #000;
+    .floating-box {
+      background-color: #000; /* Black background */
       color: #72bc8e;
       border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-      margin-bottom: 30px;
+      padding: 30px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Floating effect */
+      margin-bottom: 40px;
     }
     h2, h1 {
       color: #72bc8e;
+      font-weight: 300; /* Extra thin */
     }
     a {
       color: #72bc8e;
@@ -30,6 +31,9 @@
     }
     a:hover {
       text-decoration: underline;
+    }
+    .container {
+      max-width: 1200px;
     }
   </style>
 </head>
@@ -52,39 +56,43 @@
 
   <!-- Hero Section -->
   <section id="hero" class="py-5">
-    <div class="container section-box text-center">
-      <h2>Fighting climate change, building data-driven solutions, and creating a sustainable future.</h2>
+    <div class="container">
+      <div class="floating-box text-center">
+        <h2>Fighting climate change, building data-driven solutions, and creating a sustainable future.</h2>
+      </div>
     </div>
   </section>
 
   <!-- Skills Section -->
   <section id="skills" class="py-5">
-    <div class="container section-box text-center">
-      <h2 class="mb-4">Skills</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <ul class="list-unstyled">
-            <li>ArcGIS Pro</li>
-            <li><a href="https://github.com/ErmaSwartz/Floodriskanalysis" target="_blank">Python</a></li>
-            <li>JSX</li>
-            <li>AWS</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-unstyled">
-            <li>HTML</li>
-            <li>Adobe Suite</li>
-            <li>Content Editing</li>
-            <li>Digital Fundraising</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-unstyled">
-            <li>Microsoft Suite</li>
-            <li>Google Suite</li>
-            <li><a href="https://ermahswartz.wixsite.com/reclaimed-collective" target="_blank">Website Design</a></li>
-            <li>Public Speaking</li>
-          </ul>
+    <div class="container">
+      <div class="floating-box text-center">
+        <h2 class="mb-4">Skills</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>ArcGIS Pro</li>
+              <li><a href="https://github.com/ErmaSwartz/Floodriskanalysis" target="_blank">Python</a></li>
+              <li>JSX</li>
+              <li>AWS</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>HTML</li>
+              <li>Adobe Suite</li>
+              <li>Content Editing</li>
+              <li>Digital Fundraising</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>Microsoft Suite</li>
+              <li>Google Suite</li>
+              <li><a href="https://ermahswartz.wixsite.com/reclaimed-collective" target="_blank">Website Design</a></li>
+              <li>Public Speaking</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -93,11 +101,11 @@
   <!-- Resume Section -->
   <section id="resume" class="py-5">
     <div class="container">
-      <div class="row">
-        <!-- Work Experience -->
-        <div class="col-md-6 section-box">
-          <h2 class="mb-4">Work Experience</h2>
-          <div>
+      <div class="floating-box">
+        <div class="row">
+          <!-- Work Experience -->
+          <div class="col-md-6">
+            <h2 class="mb-4">Work Experience</h2>
             <p><strong>Mandate Media | Political Strategist and Data Consultant</strong><br>
               <em>January 2024 – January 2025</em><br>
               • Built a data application for management, analysis, and ROI reporting using Python, JSX, AWS, and React.<br>
@@ -110,24 +118,10 @@
               • Created legislative reports with advanced Excel and visualizations, simplifying data for stakeholder comprehension.<br>
               • Drafted policy recommendations that enhanced strategies and market competitiveness.
             </p>
-            <p><strong>4Degrees | Digital Account Manager and Data Specialist</strong><br>
-              <em>October 2021 – December 2022</em><br>
-              • Led social media and email marketing campaigns for Secretaries of State, Senate candidates, and Congressional members.<br>
-              • Delivered high-quality content, including writing, editing, and proofreading.<br>
-              • Created essential content for one of the top-performing Democratic fundraising programs in the 2022 election cycle.
-            </p>
-            <p><strong>Andrew Romanoff for Colorado | Field Director</strong><br>
-              <em>August 2019 – August 2020</em><br>
-              • Oversaw field operations across 45+ counties, driving voter turnout and coordinating materials and events.<br>
-              • Built partnerships, managed teams, and delivered impactful speeches to support campaign goals.
-            </p>
           </div>
-        </div>
-
-        <!-- Education -->
-        <div class="col-md-6 section-box">
-          <h2 class="mb-4">Education</h2>
-          <div>
+          <!-- Education -->
+          <div class="col-md-6">
+            <h2 class="mb-4">Education</h2>
             <p><strong>Columbia University</strong><br>
               <em>Master of Science in Urban Planning | 2024 – 2026</em>
             </p>
@@ -142,43 +136,31 @@
       </div>
     </div>
   </section>
-          <!-- About Section -->
-          <div class="col-md-6">
-            <h2 class="mb-4 text-center" style="color: #72bc8e; font-size: 1.5rem;">About</h2>
-            <p style="font-size: 1rem; line-height: 1.8;">
-              Erma Swartz is an environmental advocate and versatile professional with a robust background in data analysis, digital strategy, and sustainability-focused initiatives. Currently pursuing a Master of Science at Columbia University, her work centers on analyzing waste systems, urban resilience, and circular economy strategies. Her career spans diverse roles, including managing digital campaigns, optimizing data processes, and producing impactful policy reports.
-            </p>
-            <p style="font-size: 1rem; line-height: 1.8;">
-              With a strong foundation in tools like Python, React, and advanced data visualization, Erma has delivered innovative solutions to enhance client engagement, legislative advocacy, and community outreach. Her leadership as Founder and Director of Reclaimed Collective demonstrates her ability to manage multifaceted projects, from website development to marketing strategy, while advancing sustainability goals.
-            </p>
-            <p style="font-size: 1rem; line-height: 1.8;">
-              Professionally, Erma has worked in the nonprofit and political sectors, leading data-driven campaigns and crafting actionable insights for stakeholders. Her expertise in GIS, technical writing, and collaboration has supported her success in addressing complex challenges across various fields. Beyond her professional pursuits, she is a certified yoga instructor, an experienced diver, and an avid environmental steward, merging her passions for sustainability and community-focused solutions.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
   <!-- Projects Section -->
   <section id="projects" class="py-5">
-    <div class="container section-box text-center">
-      <h2 class="mb-4">Projects</h2>
-      <ul class="list-unstyled">
-        <li><a href="Projects/mapping-garbage-epidemic.html">Mapping the Garbage Epidemic</a></li>
-        <li><a href="Projects/flood-risk-south-bronx.html">Flood Risk and Contamination Analysis in the South Bronx</a></li>
-        <li><a href="Projects/adobe-sketchup.html">Adobe and Sketchup</a></li>
-        <li><a href="Projects/writing-samples.html">Writing Samples</a></li>
-      </ul>
+    <div class="container">
+      <div class="floating-box text-center">
+        <h2 class="mb-4">Projects</h2>
+        <ul class="list-unstyled">
+          <li><a href="Projects/mapping-garbage-epidemic.html">Mapping the Garbage Epidemic</a></li>
+          <li><a href="Projects/flood-risk-south-bronx.html">Flood Risk and Contamination Analysis in the South Bronx</a></li>
+          <li><a href="Projects/adobe-sketchup.html">Adobe and Sketchup</a></li>
+          <li><a href="Projects/writing-samples.html">Writing Samples</a></li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="py-5">
-    <div class="container section-box text-center">
-      <h2 class="mb-4">Contact Me</h2>
-      <p>Email: <a href="mailto:es4284@columbia.edu">es4284@columbia.edu</a></p>
-      <p>GitHub: <a href="https://github.com/ErmaSwartz" target="_blank">ErmaSwartz</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/erma-swartz-174939184" target="_blank">LinkedIn Profile</a></p>
+    <div class="container">
+      <div class="floating-box text-center">
+        <h2 class="mb-4">Contact Me</h2>
+        <p>Email: <a href="mailto:es4284@columbia.edu">es4284@columbia.edu</a></p>
+        <p>GitHub: <a href="https://github.com/ErmaSwartz" target="_blank">ErmaSwartz</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/erma-swartz-174939184" target="_blank">LinkedIn Profile</a></p>
+      </div>
     </div>
   </section>
 
