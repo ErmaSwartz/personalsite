@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbage Epidemic</title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Maintain shared styles -->
+    <style>
+        body {
+            background-color: #f7f8fa; /* Gray background */
+            color: #72bc8e; /* Green text */
+            font-family: 'Lato', sans-serif;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+        }
+
+        header nav a {
+            color: #72bc8e;
+            text-decoration: none;
+            font-weight: 300;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .project-details, .project-assets {
+            padding: 20px;
+            background-color: #000;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .project-details h2, .project-assets h2 {
+            color: #72bc8e;
+        }
+
+        .book-container {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .flipbook {
+            width: 100%;
+            height: 500px;
+        }
+
+        .flipbook img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/turn.js"></script> <!-- Turn.js -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="garbageepidemic.html">Garbage Epidemic</a></li>
+                <li><a href="#">Other Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>The Garbage Epidemic</h1>
+            <p>Exploring the impact of waste mismanagement and how it shapes urban landscapes.</p>
+        </section>
+
+        <section class="project-details">
+            <h2>Project Overview</h2>
+            <p>
+                This project analyzes the success of the Zero Waste Policy in New York City. It takes into account economic, spatial and social relationships in order to dive deeper into what may be working or failing within the cities 2015 policy. 
+            </p>
+        </section>
+
+        <section class="book-container">
+            <h2 class="text-center" style="color: #72bc8e;">Interactive Book</h2>
+            <div class="flipbook">
+                <!-- Images dynamically loaded -->
+            </div>
+        </section>
+
+        <section class="project-assets">
+            <h2>Assets</h2>
+            <ul>
+                <li><a href="../Booklet.pdf" target="_blank">Download Full Report (PDF)</a></li>
+                <li><a href="#">View Interactive GIS Map</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p class="text-center" style="color: #72bc8e;">© 2025 Erma Swartz. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            // Initialize the flipbook
+            $(".flipbook").turn({
+                width: 800,
+                height: 500,
+                autoCenter: true,
+            });
+
+            // Dynamically add images to the flipbook
+            const images = [
+                "layout2 (1).png", "layout2 (1)2.png", "layout2 (1)3.png", "layout2 (1)4.png", 
+                "layout2 (1)5.png", "layout2 (1)6.png", "layout2 (1)7.png", "layout2 (1)8.png",
+                "layout2 (1)9.png", "layout2 (1)10.png", "layout2 (1)11.png", "layout2 (1)12.png",
+                "layout2 (1)13.png", "layout2 (1)14.png", "layout2 (1)15.png", "layout2 (1)16.png",
+                "layout2 (1)17.png", "layout2 (1)18.png", "layout2 (1)19.png", "layout2 (1)20.png",
+                "layout2 (1)21.png", "layout2 (1)22.png", "layout2 (1)23.png", "layout2 (1)24.png",
+                "layout2 (1)25.png", "layout2 (1)26.png"
+            ];
+
+            images.forEach(image => {
+                $(".flipbook").append(`<div><img src="../Images/${image}" alt="Page ${image}"></div>`);
+            });
+
+            $(".flipbook").turn("display", "single");
+        });
+    </script>
+</body>
+</html>
