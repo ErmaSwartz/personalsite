@@ -66,6 +66,30 @@
       height: auto;
     }
   </style>
+  <style>
+    .book-container {
+      max-width: 600px; /* Set a smaller max width for all content */
+      margin: 0 auto;   /* Center horizontally */
+    }
+  
+    .page img, .spread img {
+      width: 100%;  /* Ensure images are responsive */
+      height: auto; /* Maintain aspect ratio */
+      object-fit: contain; /* Contain the image within the bounds */
+    }
+  
+    .spread {
+      display: flex;
+      justify-content: space-between; /* Space out the images within a spread */
+      gap: 10px; /* Add spacing between images in a spread */
+      margin-bottom: 20px; /* Add some space below each spread */
+    }
+  
+    .spread img {
+      width: calc(50% - 5px); /* Adjust the width of each page in a spread */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -114,30 +138,78 @@
       </p>
     </div>
     
-    <!-- Pages -->
-  <div class="page">
+   <!-- Pages -->
+<div class="page">
     <img src="../Images/1.png" alt="Cover">
   </div>
-
+  
   <div class="spread">
     <img src="../Images/2.png" alt="Page 2">
     <img src="../Images/3.png" alt="Page 3">
   </div>
-
+  
   <div class="spread">
     <img src="../Images/4.png" alt="Page 4">
     <img src="../Images/5.png" alt="Page 5">
   </div>
-
-  <!-- Repeat the above spread div for all your double-page spreads -->
-
+  
+  <div class="spread">
+    <img src="../Images/6.png" alt="Page 6">
+    <img src="../Images/7.png" alt="Page 7">
+  </div>
+  
+  <div class="spread">
+    <img src="../Images/8.png" alt="Page 8">
+    <img src="../Images/9.png" alt="Page 9">
+  </div>
+  
+  <div class="spread">
+    <img src="../Images/10.png" alt="Page 10">
+    <img src="../Images/11.png" alt="Page 11">
+  </div>
+  
+  <div class="spread">
+    <img src="../Images/12.png" alt="Page 12">
+    <img src="../Images/13.png" alt="Page 13">
+  </div>
+  
+  <div class="spread">
+    <img src="../Images/14.png" alt="Page 14">
+    <img src="../Images/15.png" alt="Page 15">
+  </div>
+  
+  <div class="spread">
+    <img src="../Images/16.png" alt="Page 16">
+    <img src="../Images/17.png" alt="Page 17">
+  </div>
+  
+  <div class="spread">
+    <img src="../Images/18.png" alt="Page 18">
+    <img src="../Images/19.png" alt="Page 19">
+  </div>
+  
+  <div class="spread">
+    <img src="../Images/20.png" alt="Page 20">
+    <img src="../Images/21.png" alt="Page 21">
+  </div>
+  
+  <div class="spread">
+    <img src="../Images/22.png" alt="Page 22">
+    <img src="../Images/23.png" alt="Page 23">
+  </div>
+  
+  <div class="spread">
+    <img src="../Images/24.png" alt="Page 24">
+    <img src="../Images/25.png" alt="Page 25">
+  </div>
+  
   <div class="page">
     <img src="../Images/26.png" alt="Back Cover">
   </div>
-
+  
   <!-- Footer -->
   <footer class="py-4 text-center">
     <p>© 2025 Erma Swartz. All Rights Reserved.</p>
   </footer>
-</body>
-</html>
+  </body>
+  </html>
