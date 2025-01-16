@@ -43,6 +43,17 @@
     .container {
       max-width: 1200px;
     }
+
+    .custom-btn {
+      background-color: #000; /* Black background */
+      color: #72bc8e; /* Green text */
+      border-color: #72bc8e; /* Green border */
+    }
+
+    .custom-btn:hover {
+      background-color: #72bc8e; /* Green background on hover */
+      color: #000; /* Black text on hover */
+    }
   </style>
 </head>
 <body>
@@ -51,29 +62,25 @@
   <div class="container d-flex justify-content-between align-items-center">
     <h1 style="font-size: 1.8rem; color: #72bc8e;">Erma Swartz</h1>
     <nav>
-      <ul class="nav">
-        <nav>
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a href="#hero" class="btn btn-outline-success mx-2 my-1">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="btn btn-outline-success mx-2 my-1">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#skills" class="btn btn-outline-success mx-2 my-1">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a href="/images/resume-final.jpg" class="btn btn-outline-success mx-2 my-1" download="Erma_Swartz_Resume">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects" class="btn btn-outline-success mx-2 my-1">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="btn btn-outline-success mx-2 my-1">Contact</a>
-            </li>
-          </ul>
-        </nav>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a href="#hero" class="btn custom-btn mx-2 my-1">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="btn custom-btn mx-2 my-1">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills" class="btn custom-btn mx-2 my-1">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="/images/resume-final.jpg" class="btn custom-btn mx-2 my-1" download="Erma_Swartz_Resume">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="btn custom-btn mx-2 my-1">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="btn custom-btn mx-2 my-1">Contact</a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -137,7 +144,7 @@
         </div>
         <!-- Row 2 -->
         <div class="col-md-6 mb-3">
-          <a href="Projects/design.html" class="btn btn-outline-success w-100 py-3">Adobe and Sketchup</a>
+          <a href="Projects/Design.html" class="btn btn-outline-success w-100 py-3">Adobe and Sketchup</a>
         </div>
         <div class="col-md-6 mb-3">
           <a href="Projects/writing-samples.html" class="btn btn-outline-success w-100 py-3">Writing Samples</a>
