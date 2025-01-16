@@ -107,13 +107,16 @@
      </div>
    </section>
 
-
+   <div class="arrow left" id="prev">‹</div>
+   <div class="arrow right" id="next">›</div>
   <!-- Booklet Section -->
 <section id="booklet" class="py-5">
     <div class="container floating-box text-center">
       <h2>Zero Waste Report</h2>
       <div id="flipbook" class="book-container">
+    
         <!-- Single page (cover) -->
+        
         <div class="page single-page"><img src="../Images/1.png" alt="Cover"></div>
         
         <!-- Double-page spreads -->
@@ -159,20 +162,34 @@
     </div>
   </section>
 
-  <!-- Turn.js Initialization -->
-  <script>
+<!-- Turn.js Initialization -->
+<script>
     $(document).ready(function () {
+      // Initialize the Turn.js flipbook
       $('#flipbook').turn({
         width: 1000, // Flipbook width
         height: 600, // Flipbook height
         autoCenter: true, // Center the book
         display: 'single', // Start with single-page mode for cover
-        gradients: true,
+        gradients: true, // Enable gradients for smooth transitions
         when: {
           turning: function (e, page) {
-            $(this).turn("display", page === 1 || page === $(this).turn("pages") ? "single" : "double");
+            // Switch between single and double-page display for first and last pages
+            $(this).turn(
+              "display",
+              page === 1 || page === $(this).turn("pages") ? "single" : "double"
+            );
           },
         },
+      });
+  
+      // Navigation functionality
+      $('#prev').click(function () {
+        $('#flipbook').turn('previous'); // Go to the previous page
+      });
+  
+      $('#next').click(function () {
+        $('#flipbook').turn('next'); // Go to the next page
       });
     });
   </script>
