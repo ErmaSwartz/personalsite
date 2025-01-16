@@ -102,9 +102,70 @@
   </section>
   </center>
 
-  <!-- Footer -->
-  <footer class="py-4 text-center">
-    <p>© 2025 Erma Swartz. All Rights Reserved.</p>
-  </footer>
-</body>
-</html>
+  <!-- Quantitative Analysis -->
+  <center>
+  <section id="quantitative-analysis" class="py-5">
+    <div class="container floating-box">
+      <h2>Quantitative Analysis</h2>
+      <p>
+        Our quantitative analysis aimed to uncover the relationships between racial demographics, industrial zoning, and flood risk in the South Bronx. The process involved several key steps:
+      </p>
+      <p>
+        1. **Data Collection:** We gathered data from multiple sources, including:
+        <ul>
+          <li>NYC PLUTO dataset for zoning and land use information.</li>
+          <li>U.S. Census Bureau for demographic data at the Neighborhood Tabulation Area (NTA) level.</li>
+          <li>Flood Hazard Surface Risk Index (FSHRI) for flood risk scores.</li>
+        </ul>
+      </p>
+      <p>
+        2. **Data Cleaning and Integration:** The datasets were cleaned to remove duplicates and irrelevant columns. We harmonized NTA identifiers and standardized zoning data to ensure consistency. The cleaned datasets were then merged using geographic identifiers, allowing for a comprehensive analysis at the neighborhood level.
+      </p>
+      <p>
+        3. **Normalization of Industrial Zoning Data:** We categorized zoning data into binary variables to indicate the presence or absence of industrial land use within each NTA. This simplification facilitated the analysis of industrial zoning's impact on flood risk and demographic distributions.
+      </p>
+      <p>
+        4. **Statistical Analysis:** We conducted multiple linear regression analyses to examine the relationships between racial demographics, industrial zoning, and flood risk scores. Correlation matrices were also generated to identify significant associations and potential multicollinearity among variables.
+      </p>
+      <p>
+        5. **Visualization:** To effectively communicate our findings, we created visual representations, including:
+        <ul>
+          <li>Stacked bar charts illustrating flood risk exposure by racial groups within neighborhoods.</li>
+          <li>Heatmaps depicting correlations between industrial zoning, flood risk, and demographic proportions.</li>
+        </ul>
+      </p>
+      <p>
+        6. **Key Findings:**
+        <ul>
+          <li>**Negative Correlation:** Predomin         <ul>
+            <li><strong>Negative Correlation:</strong> Predominantly Black and Latino neighborhoods showed a significant negative correlation with low flood risk scores, indicating disproportionate exposure to high-risk zones.</li>
+            <li><strong>Industrial Zoning Impact:</strong> Neighborhoods with higher proportions of industrial land use experienced higher average flood risk scores, confirming the link between zoning policies and environmental vulnerability.</li>
+            <li><strong>Spatial Clustering:</strong> Heatmaps revealed spatial clustering of high-risk flood zones and industrial areas within communities with lower median incomes.</li>
+            <li><strong>Racial Disparities:</strong> Bar charts highlighted that over 70% of residents in high flood-risk zones were people of color, with Black residents comprising the largest group in the most vulnerable areas.</li>
+          </ul>
+        </p>
+        <p>
+          The quantitative analysis underscored the systemic nature of environmental racism in the South Bronx. The findings demonstrated that industrial zoning and inadequate flood management disproportionately affect marginalized communities, compounding socio-economic challenges.
+        </p>
+      </div>
+    </section>
+    </center>
+   <!-- GitHub Link and Download -->
+   <section id="resources" class="py-5">
+    <div class="container floating-box text-center">
+      <h2>Resources</h2>
+      <p>
+        View the full analysis and datasets on <a href="https://github.com/ErmaSwartz/Floodriskanalysis" target="_blank">GitHub</a>.
+      </p>
+      <p>
+        Download the comprehensive project report:
+      </p>
+      <a href="bronxreport.jpg" download="South_Bronx_Flood_Risk_Analysis" class="btn btn-success">Download Report</a>
+    </div>
+  </section>
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+      <p>© 2025 Erma Swartz. All Rights Reserved.</p>
+    </footer>
+  </body>
+  </html>
