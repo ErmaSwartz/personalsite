@@ -99,9 +99,8 @@ To translate complex findings into accessible formats, infographics and thematic
       </p>
     </div>
   </section>
-  </center>
-  <!-- Booklet Section -->
-  <section id="booklet" class="py-5">
+<!-- Booklet Section -->
+<section id="booklet" class="py-5">
     <div class="container floating-box text-center">
       <h2>Zero Waste Report</h2>
       <div id="flipbook" class="book-container">
@@ -133,27 +132,23 @@ To translate complex findings into accessible formats, infographics and thematic
         <div class="page"><img src="../Images/24.png" alt="Page 24"></div>
         <div class="page"><img src="../Images/25.png" alt="Page 25"></div>
         <!-- Single page (back cover) -->
-        <div class="page"><img src="../Images/26.png" alt="Back Cover"></div>
-      </div>
-    </div>
-  </section>
-        <!-- Single page (back cover) -->
         <div class="page single-page"><img src="../Images/26.png" alt="Back Cover"></div>
       </div>
     </div>
   </section>
-
+  
   <!-- Turn.js Initialization -->
   <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
       $('#flipbook').turn({
-        width: 800,
-        height: 500,
-        autoCenter: true,
-        gradients: true,
-        display: 'double',
+        width: 800, // Flipbook width
+        height: 500, // Flipbook height
+        autoCenter: true, // Auto center flipbook
+        display: 'double', // Double-page spreads
+        gradients: true, // Enable gradients for smooth transitions
       });
     });
+  </script>
   </script>
 
   <!-- Footer -->
