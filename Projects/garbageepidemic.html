@@ -12,22 +12,22 @@
     body {
       font-family: 'Lato', sans-serif;
       font-weight: 300;
-      background-color: #222426; /* Gray background */
-      color: #72bc8e; /* Green text */
+      background-color: #222426;
+      color: #72bc8e;
       margin: 0;
       padding: 0;
     }
     .floating-box {
-      background-color: #000; /* Black box */
-      color: #72bc8e; /* Green text */
+      background-color: #000;
+      color: #72bc8e;
       border-radius: 10px;
       padding: 30px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Floating effect */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
       margin-bottom: 40px;
     }
     h1, h2, h3 {
       color: #72bc8e;
-      font-weight: 300; /* Thin text */
+      font-weight: 300;
     }
     a {
       color: #72bc8e;
@@ -37,20 +37,20 @@
       text-decoration: underline;
     }
     .book-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .book-page {
-      width: 45%; /* Two-page layout */
-      height: auto;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-    .single-page {
-      width: 90%; /* Single page for first/last */
       margin: auto;
+      width: 800px;
+      height: 500px;
+      background-color: #000;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+    .page img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .single-page img {
+      width: 100%;
     }
   </style>
 </head>
@@ -58,7 +58,7 @@
   <!-- Header -->
   <header class="py-4">
     <div class="container d-flex justify-content-between align-items-center">
-      <h1 style="font-size: 1.8rem;">Mapping the Garbage Epidemic</h1>
+      <h1>Mapping the Garbage Epidemic</h1>
       <nav>
         <ul class="nav">
           <li class="nav-item"><a href="../index.html" class="nav-link px-3">Home</a></li>
@@ -69,47 +69,37 @@
     </div>
   </header>
 
-  <!-- Project Name -->
-  <section id="project-name" class="py-5">
-    <div class="container floating-box text-center">
-      <h1>Mapping the Garbage Epidemic</h1>
-    </div>
-  </section>
-
   <!-- Description -->
   <section id="description" class="py-5">
     <div class="container floating-box">
       <h2>Description</h2>
       <p>
-        This project explores the environmental, social, and economic impacts of waste mismanagement in urban areas.
-        By combining Geographic Information Systems (GIS) and data analysis, we identified key patterns in waste disposal, 
-        highlighted the effects on vulnerable ecosystems and communities, and proposed actionable solutions for policymakers.
+        This project examines the successes and shortcomings of New York City’s 2015 Zero Waste Plan. Utilizing city data, it highlights areas of achievement, identifies opportunities for improvement, and pinpoints critical failures. By analyzing socio-economic factors, consumption patterns, spatial dynamics, income levels, and zoning regulations, the project provides a comprehensive understanding of the “garbage epidemic” and demonstrates how current policies fall short in addressing the scale of the challenge.
       </p>
     </div>
   </section>
 
-  <!-- Methodology -->
-  <section id="methodology" class="py-5">
+   <!-- Methodology -->
+   <section id="methodology" class="py-5">
     <div class="container floating-box">
       <h2>Methodology</h2>
       <p>
         The methodology focused on three core components:
         <ul>
-          <li>Data Collection: Aggregated waste management reports, city GIS datasets, and surveys.</li>
+          <li>Data Collection: Aggregated waste management reports, city GIS datasets, Census Data</li>
           <li>Spatial Analysis: Used GIS to map waste disposal locations and their proximity to affected communities.</li>
           <li>Visualization: Created infographics and maps to communicate findings to policymakers and stakeholders.</li>
         </ul>
       </p>
     </div>
   </section>
-
-<!-- Booklet Section -->
-<section id="booklet" class="py-5">
+  <!-- Booklet Section -->
+  <section id="booklet" class="py-5">
     <div class="container floating-box text-center">
       <h2>Zero Waste Report</h2>
       <div id="flipbook" class="book-container">
         <!-- Single page (cover) -->
-        <div class="page"><img src="../Images/1.png" alt="Cover"></div>
+        <div class="page single-page"><img src="../Images/1.png" alt="Cover"></div>
         <!-- Double-page spreads -->
         <div class="page"><img src="../Images/2.png" alt="Page 2"></div>
         <div class="page"><img src="../Images/3.png" alt="Page 3"></div>
@@ -140,16 +130,21 @@
       </div>
     </div>
   </section>
-  
+        <!-- Single page (back cover) -->
+        <div class="page single-page"><img src="../Images/26.png" alt="Back Cover"></div>
+      </div>
+    </div>
+  </section>
+
   <!-- Turn.js Initialization -->
   <script>
     $(document).ready(function() {
       $('#flipbook').turn({
-        width: 500, // Width of the booklet
-        height: 300, // Height of the booklet
-        autoCenter: true, // Centers the book
-        gradients: true, // Enables gradients for smoother effects
-        display: 'double', // Displays two pages at a time (book style)
+        width: 800,
+        height: 500,
+        autoCenter: true,
+        gradients: true,
+        display: 'double',
       });
     });
   </script>
